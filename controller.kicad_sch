@@ -1791,7 +1791,7 @@
     (property "Value" "SW_Push" (at 269.24 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 269.24 96.52 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP0" (at 269.24 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 269.24 96.52 0)
