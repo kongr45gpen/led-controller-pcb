@@ -6100,7 +6100,7 @@
   (gr_text "PWM LED Controller" (at 83.566 36.195) (layer "F.SilkS") (tstamp ce8cd36d-73aa-43e1-ba47-c5bbe2d865c5)
     (effects (font (size 1.8 1.8) (thickness 0.35) bold))
   )
-  (gr_text "by kongr45gpen [v1]" (at 83.312 38.1) (layer "F.SilkS") (tstamp dd4020ac-586d-482c-9417-b400dff7c183)
+  (gr_text "by kongr45gpen [v2]" (at 83.312 38.1) (layer "F.SilkS") (tstamp dd4020ac-586d-482c-9417-b400dff7c183)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "+  -" (at 57.658 32.766) (layer "F.SilkS") (tstamp f7d851c2-4208-49e5-9567-b02903c40cf0)
