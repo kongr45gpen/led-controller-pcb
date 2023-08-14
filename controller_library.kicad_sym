@@ -172,6 +172,9 @@
     (property "Datasheet" "https://www.we-online.com/components/products/datasheet/1769405241.pdf" (at 5.08 13.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "ki_description" "5V, 12V or 24V Input Voltage / 2W / 3kV Functional Isolated Unregulated 5V Output" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (symbol "Wurth_Elektronik_1769405241_1_0"
       (pin power_in line (at -12.7 3.81 0) (length 2.54)
         (name "VIN-" (effects (font (size 1.27 1.27))))
