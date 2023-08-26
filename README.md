@@ -40,7 +40,7 @@ A total project cost for a simple RGB led control system could be: 5m 5050 12V R
 
 With example parts and prices from Mouser:
 
-| Ref | Part | Quantity | CONTROLLER | DIMMER | Description | Price |
+| Ref | Part | Qu.| CONT. | DIM. | Description | Price |
 | :-- | :--- | :------: | :--------: | :----: | ----------- | ----: |
 | Brd1 | 4-pin I2C SSD1306 | 1 | ❓ | | Debugging info screen | 3€ |
 | C1 | C 100nF 0603 (1608 metric) | 1 | | ✔️ | Decoupling capacitor | [0.1€](https://www.mouser.com/ProductDetail/581-04026D104KAT4A) |
