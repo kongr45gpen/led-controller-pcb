@@ -15,6 +15,7 @@ Do you want to control your LEDs through Wi-Fi, Bluetooth or Zigbee, but you don
 - ESP32-C6 controllable through **USB, Wi-Fi, Bluetooth 5 (LE), IEEE 802.15.4**
 - Support for RGB, RGBW, RGBWW/CW, WS2812B, and other configurations
 - Control through MQTT, HomeAssistant
+- **Non**-isolated input
 - Fully open-source software and hardware
 - 6.25 × 5 cm
 - Not battle tested, so might stop working randomly
@@ -75,8 +76,9 @@ Some solder bridges/solder jumpers may need to be soldered before any operation 
 | :-- | :--: | :--------: | :----: | :---------- |
 | JP1 | 3    |            | ✔️     | Controls the source of `VDD` for the LED power output. Bridge 2-1 to connect to `5V`. Bridge 2-3 to connect to `VIN` (J1, J2). |
 | JP2 | 3    | ❓          |       | Controls the voltage source (typically 5V) for the addressable strip. Bridge 2-1 to connect to `5V`. Bridge 2-3 to connect to `VIN` (J1, J2). |
-| JP3 | 2    |           | ✔️       | Bridge to connect power ground with digital ground.  |
-| JP4 | 2    | ❓          |         | Bridge to connect VR1 output to 5V  |
+| JP3 | 2    |           | ✔️       | Bridge to connect power ground with digital ground. **Must** solder for proper operation.  |
+| JP4 | 2    | ❓          |         | Bridge to connect VR1 output to 5V. Must solder to enable voltage regulation from VIN to ESP32 5V. Keep desoldered during debugging to prevent damaging your equipment.  |
+| JPout1..5 | 2 | | ✔️ | Bridge to connect transistor outputs to output connector. You can alternatively wire a series resistor here for your output, if needed. |
 
 ### Example configurations
 
@@ -88,6 +90,7 @@ Some solder bridges/solder jumpers may need to be soldered before any operation 
 - Rpd1..3 to prevent lights from going up during boot
 - J4 to screw LED strip wires
 - U1 for control
+- Bridge JP1 (2-3), JP3, JPout1..3. After uploading code, bridge JP4.
 - BOM cost: **18€**
 
 **Addressable strip controller with debugging screen**:
@@ -96,4 +99,5 @@ Some solder bridges/solder jumpers may need to be soldered before any operation 
 - J5 connector to output addressable LED data
 - J5 wire plug to solder on addressable LED
 - Brd1 screen + 4-pin header to allow detaching it
+- Bridge JP2 (2-1)
 - BOM cost: **6€**
